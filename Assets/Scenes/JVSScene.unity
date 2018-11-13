@@ -164,6 +164,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4707655300942510, guid: ba223ec3b3ce94e4ea004df2e77ba3bd,
     type: 2}
   m_PrefabInternal: {fileID: 67379257}
+--- !u!1 &171988801 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1835996206125212, guid: 2fbeaff71185f470dbf9ca6c2e1fe743,
+    type: 2}
+  m_PrefabInternal: {fileID: 2043601720}
 --- !u!1001 &341472541
 Prefab:
   m_ObjectHideFlags: 0
@@ -323,6 +328,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Hero Camera
   m_TagString: MainCamera
@@ -337,6 +343,18 @@ AudioListener:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b44c071e1cc4a45f38bb38d3b44ea9c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 171988801}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -1029,7 +1047,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4993448198228816, guid: 2fbeaff71185f470dbf9ca6c2e1fe743, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4993448198228816, guid: 2fbeaff71185f470dbf9ca6c2e1fe743, type: 2}
       propertyPath: m_LocalPosition.y
