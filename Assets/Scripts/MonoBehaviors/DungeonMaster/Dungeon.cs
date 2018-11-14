@@ -25,7 +25,13 @@ public class Dungeon : MonoBehaviour {
     {
         // Not sure how to do this yet but we should calculate the width of the room from the start position
         // Because the rooms could all be different widths
+        var roomBounds = room.GetComponent<BoxCollider2D>();
+        if (roomBounds == null)
+        {
+            Debug.LogError("The room " + room.name + " does not have a box collider 2D on it to specify the room bounds");
+            return;
+        }
 
-        _nextRoomStart.x -= 3;
+        _nextRoomStart.x -= roomBounds.size.x;
     }
 }
