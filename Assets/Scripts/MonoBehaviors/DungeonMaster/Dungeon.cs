@@ -26,6 +26,6 @@ public class Dungeon : MonoBehaviour {
         // Not sure how to do this yet but we should calculate the width of the room from the start position
         // Because the rooms could all be different widths
 
-        _nextRoomStart.x -= 1;
+        _nextRoomStart.x -= 3;
     }
 }

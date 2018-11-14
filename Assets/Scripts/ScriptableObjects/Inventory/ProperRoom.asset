@@ -8,11 +8,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: BuildableRoom1
-  m_EditorClassIdentifier: Assembly-CSharp::BuildableRoom
+  m_Script: {fileID: 11500000, guid: 53f78f0aa84e5884893a898bb5e6b619, type: 3}
+  m_Name: ProperRoom
+  m_EditorClassIdentifier: 
   InventorySprite: {fileID: 21300000, guid: bf63d0b8894f87a4396c2beb9c7ec07b, type: 3}
   InventorySlotPrefab: {fileID: 1575386668253942, guid: 900245cbff8dd1f409bf7ca1613d4550,
     type: 2}
-  RoomPrefab: {fileID: 1024443166276580, guid: 9a60a4cafff02734f9ec3b08496f931d, type: 2}
-  Cost: 10
+  RoomPrefab: {fileID: 1257118674369480, guid: f2a37a3ff41c84420867da55f6aee266, type: 2}
+  Cost: 30

@@ -284,7 +284,7 @@ GameObject:
   - component: {fileID: 1478527159}
   - component: {fileID: 1478527158}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Dungeon Master UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -497,4 +497,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AllBuildableRooms:
-  - {fileID: 11400000, guid: 7371e3461fe39d140806621a40bf841c, type: 2}
+  - {fileID: 11400000, guid: 79e0ac0b4d355c1468c857f3d20954d3, type: 2}
+  - {fileID: 11400000, guid: 21adb7e7ef5c36345ba2a97bcd3e8ad5, type: 2}
+  - {fileID: 11400000, guid: e0c359c8e5887df43a3fe859d7428f39, type: 2}

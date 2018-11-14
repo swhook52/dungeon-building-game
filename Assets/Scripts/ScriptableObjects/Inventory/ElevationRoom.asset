@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53f78f0aa84e5884893a898bb5e6b619, type: 3}
+  m_Name: ElevationRoom
+  m_EditorClassIdentifier: 
+  InventorySprite: {fileID: 21300000, guid: bf63d0b8894f87a4396c2beb9c7ec07b, type: 3}
+  InventorySlotPrefab: {fileID: 1575386668253942, guid: 900245cbff8dd1f409bf7ca1613d4550,
+    type: 2}
+  RoomPrefab: {fileID: 1106508569144486, guid: 016d9deb1426f461f893a3911f4dda76, type: 2}
+  Cost: 10
