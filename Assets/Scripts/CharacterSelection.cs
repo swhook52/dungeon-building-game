@@ -32,8 +32,7 @@ public class CharacterSelection : MonoBehaviour
 
     void PlayGame()
     {
-        //we don't have this ATM, so ignore for now
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void GoBackToMainMenu()

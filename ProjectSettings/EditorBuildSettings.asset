@@ -5,13 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/StartMenuScene.unity
     guid: 24d5cde0b61d38549b904f0616c10e5a
   - enabled: 1
     path: Assets/Scenes/CharacterSelectionScene.unity
     guid: df926f9f5eaff9f40b38f421ded1dd40
+  - enabled: 1
+    path: Assets/Scenes/WinScenarioScene.unity
+    guid: 16d7c80d498ff6a4e839ca15717e3e60
+  - enabled: 1
+    path: Assets/Scenes/Steve.unity
+    guid: 908dbedca7124b24eabd90bee60c64e6
   m_configObjects: {}
