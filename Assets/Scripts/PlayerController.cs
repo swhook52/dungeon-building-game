@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     public int speed;
     public bool isOnGround;
     public float jumpForce;
+    public int health;
 
     Rigidbody2D rb;
     Vector3 jump;
@@ -15,6 +16,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         jump = new Vector3(0, 2f, 0);
+        health = 10;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -23,6 +25,15 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isOnGround = true;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // Check is the collided object is a healthItem
+        if (collision.gameObject.CompareTag("HealthItem"))
+        {
+            collision.gameObject.SetActive(false);
         }
     }
 
