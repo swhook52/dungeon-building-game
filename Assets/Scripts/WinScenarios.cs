@@ -16,7 +16,7 @@ public class WinScenarios : MonoBehaviour
     public void SetLivesLabelText(float sliderValue)
     {
         var lives = Mathf.Round(sliderValue);
-        PlayerPrefs.SetFloat("lives", lives);
+        GameManager.instance.heroLives = (int)lives;
 
         if (lives == 1)
         {
@@ -31,24 +31,20 @@ public class WinScenarios : MonoBehaviour
     public void SetLootLabelText(float sliderValue)
     {
         var loot = Mathf.Round(sliderValue);
-        PlayerPrefs.SetFloat("loot", loot);
+        GameManager.instance.heroLoot = loot;
 
         textComponent.text = "Hero needs " + loot.ToString() + " loot to win";
     }
 
     public void SaveWinScenarios()
     {
-        //save win scenario vars to "local storage"
-        PlayerPrefs.Save();
-
-        Debug.Log("Lives is now set to: " + PlayerPrefs.GetFloat("lives").ToString());
-        Debug.Log("Loot is now set to: " + PlayerPrefs.GetFloat("loot").ToString());
-
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void GoBackToCharacterSelection()
     {
+        GameManager.instance.heroLives = 0;
+        GameManager.instance.heroLoot = 0;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 }

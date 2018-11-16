@@ -19,8 +19,7 @@ public class CharacterSelection : MonoBehaviour
 
     void CharacterSelectedHandler(Button pressed)
     {
-        Debug.Log("You have selected the button: " + pressed.name);
-        //set character to selected
+        GameManager.instance.selectedHero = pressed.name;
         SetUpGame();
     }
 
@@ -37,6 +36,7 @@ public class CharacterSelection : MonoBehaviour
 
     public void GoBackToMainMenu()
     {
+        GameManager.instance.selectedHero = String.Empty;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 }
