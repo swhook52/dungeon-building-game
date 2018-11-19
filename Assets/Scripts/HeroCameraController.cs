@@ -23,6 +23,7 @@ public class HeroCameraController : MonoBehaviour
     // LateUpdate is guaranteed after all items have had Update() been run
     void LateUpdate()
     {
-        transform.position = player.transform.position + offset;
+        var transformX = player.transform.position.x + offset.x;
+        transform.position = new Vector3(transformX, transform.position.y, transform.position.z);
     }
 }
