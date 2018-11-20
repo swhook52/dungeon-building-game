@@ -37,6 +37,11 @@ public class GameManager : MonoBehaviour
         dungeonMasterCurrency = 1000; //just a placeholder
     }
 
+    public void KillHero()
+    {
+        Debug.Log("Kill Hero");
+    }
+
     void Update()
     {
        

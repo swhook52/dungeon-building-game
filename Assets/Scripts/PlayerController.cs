@@ -82,7 +82,6 @@ public class PlayerController : MonoBehaviour
             // If crouching
             if (crouch)
             {
-                Debug.Log("Crouching");
                 if (!m_wasCrouching)
                 {
                     m_wasCrouching = true;

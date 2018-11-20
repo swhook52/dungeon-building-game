@@ -154,7 +154,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1077920064417544, guid: ccf42cf1c297c4223a31dd7f92e39d7d, type: 2}
       propertyPath: m_Layer
-      value: 0
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3664157346223790996, guid: ccf42cf1c297c4223a31dd7f92e39d7d,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ccf42cf1c297c4223a31dd7f92e39d7d, type: 2}
