@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class Dungeon : MonoBehaviour {
 
@@ -25,13 +26,13 @@ public class Dungeon : MonoBehaviour {
     {
         // Not sure how to do this yet but we should calculate the width of the room from the start position
         // Because the rooms could all be different widths
-        var roomBounds = room.GetComponent<BoxCollider2D>();
+        var roomBounds = room.GetComponentInChildren<TilemapCollider2D>();
         if (roomBounds == null)
         {
-            Debug.LogError("The room " + room.name + " does not have a box collider 2D on it to specify the room bounds");
+            Debug.LogError("The room " + room.name + " does not have a Tilemap Collider 2D on it to specify the room bounds");
             return;
         }
 
-        _nextRoomStart.x -= roomBounds.size.x;
+        _nextRoomStart.x -= roomBounds.bounds.size.x;
     }
 }

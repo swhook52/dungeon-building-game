@@ -2,17 +2,26 @@
 
 public class HeroMovement : MonoBehaviour
 {
-    public PlayerController controller;
+    public float runSpeed = 5f;
 
-    public float runSpeed = 40f;
-
-    float horizontalMove = 0f;
+    float horizontalMove;
     bool jump = false;
     bool crouch = false;
+
+    private Animator _animator;
+    private PlayerController _controller;
+
+    private void Awake()
+    {
+        _animator = GetComponent<Animator>();
+        _controller = GetComponent<PlayerController>();
+    }
 
     void Update()
     {
         horizontalMove = Input.GetAxis("Horizontal") * runSpeed;
+        Debug.Log(horizontalMove);
+        _animator.SetFloat("RunSpeed", Mathf.Abs(horizontalMove));
 
         jump |= Input.GetButtonDown("Jump");
 
@@ -29,7 +38,7 @@ public class HeroMovement : MonoBehaviour
     void FixedUpdate()
     {
         // Move the character
-        controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
+        _controller.Move(horizontalMove * Time.fixedDeltaTime, jump);
         jump = false;
     }
 }
