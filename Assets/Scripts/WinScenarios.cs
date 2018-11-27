@@ -38,6 +38,7 @@ public class WinScenarios : MonoBehaviour
 
     public void SaveWinScenarios()
     {
+        FindObjectOfType<AudioManager>().StopSound("MenuMusic");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
