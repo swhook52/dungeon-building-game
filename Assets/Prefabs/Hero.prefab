@@ -55,6 +55,7 @@ GameObject:
   - component: {fileID: 50067046351742296}
   - component: {fileID: 114113744973943368}
   - component: {fileID: 114282832180897340}
+  - component: {fileID: 114785252159441506}
   m_Layer: 0
   m_Name: Hero
   m_TagString: Player
@@ -199,6 +200,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 25
+--- !u!114 &114785252159441506
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1321179493585802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f726e6d1b453b4077bd7aa30c5a54eae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  areaOfEffect: {fileID: 0}
+  hero: {fileID: 1321179493585802}
 --- !u!212 &212798792953216812
 SpriteRenderer:
   m_ObjectHideFlags: 1

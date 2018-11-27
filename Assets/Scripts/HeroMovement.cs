@@ -20,7 +20,6 @@ public class HeroMovement : MonoBehaviour
     void Update()
     {
         horizontalMove = Input.GetAxis("Horizontal") * runSpeed;
-        Debug.Log(horizontalMove);
         _animator.SetFloat("RunSpeed", Mathf.Abs(horizontalMove));
 
         jump |= Input.GetButtonDown("Jump");
